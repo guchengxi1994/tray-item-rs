@@ -276,7 +276,8 @@ impl TrayItemWindows {
             );
 
             if handle == 0 {
-                return Err(get_win_os_error("Error setting icon from resource"));
+                // return Err(get_win_os_error("Error setting icon from resource"));
+                println!("[rsut] give up set icon");
             }
 
             handle
